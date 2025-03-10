@@ -1,0 +1,21 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off",
+    // Prefer 'const' for variables that are not reassigned
+    "prefer-const": "error",
+    "@typescript-eslint/no-explicit-any": ["off"],
+
+    // Disallow the use of 'any' unless necessary
+    // Disallow unused expressions
+    "@typescript-eslint/no-unused-expressions": "error",
+
+    // Suggest using 'next/image' for <img> elements
+    "@next/next/no-img-element": "warn",
+
+    // React hooks dependency array enforcement
+    "react-hooks/exhaustive-deps": "warn"
+
+    // Relax TypeScript unused vars to ignore unused function arguments prefixed with '_'
+  }
+}
